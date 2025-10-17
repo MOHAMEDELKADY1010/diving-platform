@@ -136,13 +136,11 @@ The table below indicates that all CSS files located in the `src/styles` directo
 The warnings in index.css are related to vendor-specific properties and font names. We are leaving these warnings as is for the following reasons:
 
 1. **Vendor-specific properties** (-webkit-font-smoothing, -moz-osx-font-smoothing):
-
    - These properties are crucial for consistent font rendering across different browsers.
    - They improve text legibility, especially on macOS and iOS devices.
    - While they are non-standard, they are widely used and accepted in professional web development.
 
 2. **System font stack** (-apple-system, BlinkMacSystemFont, etc.):
-
    - This approach uses system fonts, which improves performance and provides a native look and feel.
    - It's a common and recommended practice in modern web development.
    - While some of these font names are vendor-specific, they ensure the best possible font on each operating system.
@@ -151,7 +149,6 @@ The warnings in index.css are related to vendor-specific properties and font nam
    - `-moz-osx-font-smoothing`
 
 3. **Cross-browser compatibility**:
-
    - These properties and font names ensure a consistent and high-quality user experience across different browsers and operating systems.
    - Removing them could lead to inconsistent rendering on various platforms.
    - `::-webkit-scrollbar`
@@ -188,7 +185,6 @@ These styles are essential for ensuring optimal font rendering and custom scroll
    ```
 
 2. **Configuration Files:**
-
    - **.eslintrc.json**: This file contains the configuration for ESLint.
 
      ```json
@@ -804,17 +800,14 @@ These results demonstrate the thoroughness of our testing approach and confirm t
 Here's a brief explanation of each issue and its solution:
 
 1. **`publicId` prop warning**:
-
    - Issue: The Cloudinary component was not recognizing the `publicId` prop.
    - Solution: Use the `cldVid` object correctly with the Cloudinary video method.
 
 2. **State update on unmounted component**:
-
    - Issue: Potential memory leak due to state updates after component unmount.
    - Solution: Implement a cleanup function using `useEffect` to prevent updates on unmounted components.
 
 3. **Unused `isMounted` variable**:
-
    - Issue: ESLint warning about an unused variable.
    - Solution: Remove the unused `isMounted` variable and its related `useEffect` hook.
 
@@ -895,22 +888,18 @@ These references provide more information on the hooks and functions used to sol
 These solutions address the main issues we encountered in the Single Course Page component:
 
 1. **Maintaining Context After Sign-In**:
-
    - Implemented a redirection mechanism that includes the current page URL as a 'next' parameter when redirecting to the sign-in page.
    - This ensures that after successful sign-in, the user is returned to the page they were viewing, improving user experience and maintaining context.
 
 2. **Consistent User Experience**:
-
    - Updated the logic for actions that require sign-in (like booking a course or adding a review) to include the current location in the redirection URL.
    - This provides a seamless experience where users can easily complete their intended actions after signing in, without losing their place in the application.
 
 3. **Update Review Button State Management**:
-
    - Implemented state management using React's useState hook to track changes in the review form.
    - The Update Review button is now disabled when no changes are detected, preventing unnecessary API calls and providing better user feedback.
 
 4. **Consistent Delete Confirmation Modal**:
-
    - Replaced the existing delete confirmation modal with a reusable DeleteConfirmationModal component.
    - This ensures consistency across the application and improves maintainability of the code.
 
@@ -971,12 +960,10 @@ By implementing these solutions, we've improved the component's functionality, u
 ### Explanation of Each Issue and Solution:
 
 1. **No automatic handling for 403 and 500 errors:**
-
    - **Issue:** The application does not automatically handle 403 and 500 errors.
    - **Solution:** Implement Axios interceptors to catch these errors globally and redirect to custom error pages.
 
 2. **No global error boundary to catch rendering errors:**
-
    - **Issue:** There was no global error boundary to catch rendering errors.
    - **Solution:** Wrap the main `App` component with an `ErrorBoundary` to catch and handle rendering errors.
 
@@ -1001,22 +988,18 @@ These fixes ensure that the application handles errors gracefully, provides mean
 ### Explanation of Each Issue and Solution:
 
 1. **Icons without text labels are not user-friendly:**
-
    - **Issue:** The dropdown used only icons, which can be confusing for some users.
    - **Solution:** Add text labels next to icons to improve clarity and usability.
 
 2. **Dropdown menu might overflow or misalign:**
-
    - **Issue:** The dropdown menu could potentially overflow or misalign, especially with added text.
    - **Solution:** Update CSS to ensure proper alignment and prevent overflow, using `min-width` and flexbox properties.
 
 3. **Dropdown positioning might be inconsistent:**
-
    - **Issue:** The dropdown's position might not be consistent across different screen sizes.
    - **Solution:** Use `drop="left"` prop consistently and adjust CSS for responsive design to ensure proper positioning.
 
 4. **Tests checking only for aria-labels:**
-
    - **Issue:** The existing tests were only checking for aria-labels, not the actual text content.
    - **Solution:** Update tests to check for new text labels alongside icons, ensuring comprehensive test coverage.
 

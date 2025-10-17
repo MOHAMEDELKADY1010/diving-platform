@@ -588,7 +588,6 @@ Overall, the website's purpose is to create a mutually beneficial environment fo
   - Navigate intuitively and access updated information effortlessly.
   - Experience fast loading pages for a smooth browsing experience.
 - Streamlined Administration:
-
   - Manage user accounts and update course information efficiently through a user-friendly admin interface.
   - Manage static content on the website to ensure accurate and up-to-date information.
   - Monitor website performance to identify and address any issues promptly.
@@ -605,18 +604,15 @@ Overall, the website's purpose is to create a mutually beneficial environment fo
 **Information Architecture:**
 
 1. Home Page
-
    - Welcome message and site introduction
    - Quick links to course catalog, community social page, and user registration/login
 
 2. Course Catalog
-
    - List of available diving courses
    - Course categories (e.g., beginner, advanced, specialties)
    - Links to individual course pages
 
 3. Individual Course Page
-
    - Course title, level, and duration
    - Detailed course description and requirements
    - Instructor information
@@ -624,19 +620,16 @@ Overall, the website's purpose is to create a mutually beneficial environment fo
    - Course booking option
 
 4. Community Hub
-
    - Discussion social page
    - Recent topics and popular threads
    - User-generated content (experiences, tips, photos)
    - Latest community posts and reviews
 
 5. User Reviews
-
    - Can add review with rating system for courses
    - Can create, read, update and delete
 
 6. User Profiles
-
    - Personal information and diving experience
    - Activity feed (recent reviews, forum posts, etc.)
    - Can see own booking
@@ -644,35 +637,29 @@ Overall, the website's purpose is to create a mutually beneficial environment fo
    - Can create, read, update profile
 
 7. Post Page
-
    - Can add posts
    - Can add images
    - Can create, read, update and delete
 
 8. My Dashboard (for registered users)
-
    - Overview of booked courses
    - Can see feed
    - Can see list of liked posts
 
 9. Contact Page
-
    - Contact form
    - Can create, read, update and delete
 
 10. Booking Form
-
     - Can book diving course
     - Can create, read, update and delete
 
 11. Registration and Login
-
     - User registration form
     - Login page
     - Password recovery option
 
 12. Navigation
-
     - Primary Navigation: Home, Courses, Community, Dive Sites, Reviews
     - User Menu: My Dashboard, Profile, Messages, Settings (for logged-in users)
     - Secondary Navigation: About Us, Contact, FAQ
@@ -1106,22 +1093,18 @@ The "Diving Center" project makes it very simple for new users to create account
 #### Key Features:
 
 1. **User Registration and Login:**
-
    - Users can easily register for a new account or log in to an existing one through intuitive forms provided by Django Allauth.
    - The React frontend includes components like `SignUpForm` and `SignInForm` to handle these processes.
 
 2. **JWT Authentication:**
-
    - JSON Web Tokens (JWT) are used for secure authentication, ensuring that user sessions are managed securely.
    - The backend employs libraries like `dj-rest-auth` to support JWT, enhancing security and user experience.
 
 3. **Access Control:**
-
    - Custom permissions, such as `IsOwnerOrReadOnly`, ensure that only authorized users can modify or delete specific resources.
    - The React frontend uses context (e.g., `useCurrentUser`) to manage the current user's state and enforce access control.
 
 4. **Protected Routes:**
-
    - Certain routes are protected and require user authentication. For example, the route to create a booking (`/bookings/create`) redirects unauthenticated users to the sign-in page.
 
 5. **User Feedback:**
@@ -1679,7 +1662,6 @@ CRUD operations are fundamental to most interactive systems because they represe
 In a typical React and Django Rest Framework (DRF) application:
 
 1. Frontend (React):
-
    - Creates user interfaces for inputting, displaying, editing, and deleting data.
    - Sends HTTP requests to the backend API for each CRUD operation.
    - Uses state management to handle data locally and update the UI.
@@ -1695,17 +1677,14 @@ In a typical React and Django Rest Framework (DRF) application:
 ### CRUD in React and Django Rest Framework:
 
 1. Create:
-
    - React: User fills a form and submits data.
    - DRF: Handles POST request, validates data, and creates a new database entry.
 
 2. Read:
-
    - React: Fetches and displays data from the API.
    - DRF: Handles GET requests and returns data from the database.
 
 3. Update:
-
    - React: User modifies existing data in a form and submits changes.
    - DRF: Handles PUT or PATCH requests, validates changes, and updates the database.
 
@@ -1742,24 +1721,20 @@ Here are some future feature suggestions for the "Diving Center" project:
 **Admin Portal**:
 
 - **Current Status**:
-
   - Admins currently use the Django Rest Framework (DRF) interface for managing courses, users, profiles, comments, and other site content.
   - The DRF interface provides a JSON-based API, which is efficient for data manipulation and integration with other systems.
   - In production, the DRF browsable API is disabled for security reasons, and all interactions are done through JSON responses.
 
 - **Basic Design**:
-
   - The current admin interface is built on Django's default admin panel, which includes basic styling and functionality.
   - Admins interact with the API primarily through JSON, which allows for efficient data handling and integration with other tools.
   - The interface is designed to be functional but minimal, focusing on core administrative tasks without unnecessary complexity.
 
 - **Future Enhancement**:
-
   - A dedicated, user-friendly front-end admin portal will be developed to replace the current DRF interface.
   - This portal will provide a more accessible and visually appealing interface for non-technical staff members.
 
 - **Key Features**:
-
   - **Intuitive Dashboard**: A quick overview of site activities, including user registrations, course enrollments, and recent comments.
   - **Easy-to-Use Interfaces**: Simplified interfaces for managing courses, users, profiles, and comments, reducing the learning curve for new admins.
   - **Advanced Analytics**: Reporting tools to provide insights into user behavior, course popularity, and other key metrics.
@@ -2105,7 +2080,6 @@ The respective URLs for these platforms and services are as follows:
 3. **Connect to GitHub**: In the "Deploy" section, select "GitHub" as the deployment method. Search for your "Diving Center" repository and connect it to Heroku.
 
 4. **Set up environment variables**: In the "Settings" section, click on "Reveal Config Vars". Here, you'll need to add some important variables:
-
    - `SECRET_KEY`: A secret key for your Django project (you can generate one online).
    - `DATABASE_URL`: The URL for your database (e.g., Heroku Postgres).
    - `CLOUDINARY_URL`: The URL for your Cloudinary account (for storing images and media).
