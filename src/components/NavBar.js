@@ -155,7 +155,7 @@ const NavBar = () => {
           }}
           aria-controls="basic-navbar-nav"
         >
-          <img src="../images/courses/toggle.ico" alt="Menu" />
+          {/* <img src="../images/courses/toggle.ico" alt="Menu" /> */}
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">

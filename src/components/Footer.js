@@ -12,7 +12,7 @@ const Footer = ({ className }) => {
       label: 'GitHub',
     },
     {
-      href: 'https://www.linkedin.com/in/mohamedelkady/',
+      href: 'https://www.linkedin.com/in/mohamed-elkady-bb9173178/',
       icon: 'fab fa-linkedin',
       label: 'LinkedIn',
     },
