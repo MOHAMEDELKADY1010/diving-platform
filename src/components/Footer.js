@@ -4,14 +4,15 @@ import styles from '../styles/Footer.module.css';
 const Footer = ({ className }) => {
   const currentYear = new Date().getFullYear();
 
+  // روابط التواصل الاجتماعي الخاصة بك
   const socialLinks = [
     {
-      href: 'https://github.com/AmirShkolnik',
+      href: 'https://github.com/MOHAMEDELKADY1010',
       icon: 'fab fa-github',
       label: 'GitHub',
     },
     {
-      href: 'https://www.linkedin.com/in/amirshkolnik/',
+      href: 'https://www.linkedin.com/in/mohamedelkady/',
       icon: 'fab fa-linkedin',
       label: 'LinkedIn',
     },
@@ -20,9 +21,10 @@ const Footer = ({ className }) => {
   return (
     <footer className={`${styles.footer} ${className}`}>
       <p className={styles.footerText}>
-        &copy; {currentYear} Mohamed Elkady . All rights reserved.
+        &copy; {currentYear} Mohamed Elkady. All rights reserved.
       </p>
-      {/* <div className={styles['footer-icons']}>
+
+      <div className={styles['footer-icons']}>
         {socialLinks.map((link, index) => (
           <a
             key={index}
@@ -34,7 +36,7 @@ const Footer = ({ className }) => {
             <i className={link.icon}></i>
           </a>
         ))}
-      </div> */}
+      </div>
     </footer>
   );
 };
