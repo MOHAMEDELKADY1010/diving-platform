@@ -1,0 +1,79 @@
+.modal {
+  font-size: 1.5rem;
+}
+
+.modalHeader {
+  background-color: #0d5589 !important;
+  color: #ffffff !important;
+  border-bottom: none !important;
+  position: relative;
+  padding: 1rem;
+}
+
+.modalTitle {
+  font-weight: bold !important;
+}
+
+.modalBody {
+  color: #242a3d !important;
+}
+
+.modalFooter {
+  border-top: none !important;
+}
+
+.button {
+  font-size: 0.8rem !important;
+  align-self: center !important;
+  border-radius: 100px !important;
+  border-color: transparent !important;
+  padding: 4px 10px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  min-width: 75px !important;
+  transition:
+    background-color 0.3s,
+    color 0.3s !important;
+}
+
+.cancelButton {
+  background-color: #cccccc !important;
+  color: #666666 !important;
+}
+
+.cancelButton:hover {
+  opacity: 0.8 !important;
+  background-color: #b3b3b3 !important;
+}
+
+.deleteButton {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+.deleteButton:hover {
+  opacity: 0.8 !important;
+  background-color: #cc0000 !important;
+}
+
+.deleteButton:active,
+.deleteButton:focus {
+  background-color: #b30000 !important;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  transition: color 0.3s ease !important;
+}
+
+.closeButton:hover {
+  color: #b99a45 !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,36 @@
+.footer {
+  background-color: #0d5589;
+  border-top: 1px solid #c7ae6a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footerText {
+  color: white;
+}
+
+.footer a {
+  color: #c7ae6a;
+  text-decoration: none;
+  transition: color ease-in-out 0.3s;
+}
+
+.footer a:hover {
+  color: #b99a45;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: #c7ae6a;
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.footer-icons a:hover {
+  color: #b99a45;
+}

@@ -1,0 +1,103 @@
+.NavBar {
+  background-color: #0d5589;
+  border: 1px solid #c7ae6a;
+}
+
+.NavLink {
+  padding: 5px;
+}
+
+a {
+  color: white;
+  transition: color ease-in-out 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #b99a45;
+}
+
+a.NavLink:active,
+a.NavLink:focus {
+  color: #c7ae6a;
+}
+
+i {
+  color: #c7ae6a;
+}
+
+a:hover i {
+  color: #c7ae6a;
+  transition: color ease-in-out 0.3s;
+}
+
+.Dropdown {
+  margin-left: 10px;
+}
+
+.DropdownToggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.DropdownToggle::after {
+  color: white !important;
+}
+
+.customDropdown > a::after {
+  color: white !important;
+  border-top-color: white !important;
+}
+
+.customDropdown > a:hover::after {
+  color: #b99a45 !important;
+  border-top-color: #b99a45 !important;
+}
+
+.DropdownToggle:hover,
+.DropdownToggle:hover::after {
+  color: #b99a45;
+}
+
+.DropdownToggle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.Dropdown > div[class*='dropdown-menu'] {
+  background-color: #0d5589 !important;
+  border: 1px solid #c7ae6a !important;
+}
+
+.DropdownMenu {
+  background-color: #0d5589 !important;
+  border: 1px solid #c7ae6a !important;
+}
+
+.DropdownItem {
+  background-color: #0d5589 !important;
+  color: white !important;
+  transition:
+    color ease-in-out 0.3s,
+    background-color ease-in-out 0.3s;
+}
+
+.DropdownItem:hover,
+.DropdownItem:focus,
+.DropdownItem.active {
+  color: #ffffff !important;
+  background-color: #b99a45 !important;
+}
+
+.DropdownItem i {
+  color: #c7ae6a;
+  margin-right: 5px;
+}
+
+.DropdownItem:hover i {
+  color: #ffffff;
+}

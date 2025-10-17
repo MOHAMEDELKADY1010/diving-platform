@@ -1,0 +1,35 @@
+.Post {
+  background-color: #ffffff;
+  color: #0d5589 !important;
+  border: 1px solid #dadadf;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.Post figure,
+h5 {
+  margin: 0 0;
+}
+
+.OwnerLink {
+  color: #0d5589 !important;
+  text-decoration: none;
+}
+
+.OwnerLink:hover {
+  color: #c7ae6a !important;
+  text-decoration: underline;
+}
+
+.Heart {
+  color: #f85032;
+}
+
+.Heart:hover {
+  color: #2142b2;
+}
+
+.HeartOutline:hover {
+  color: #f85032;
+}

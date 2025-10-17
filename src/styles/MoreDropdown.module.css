@@ -1,0 +1,36 @@
+.DropdownItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.DropdownItem i {
+  margin-right: 8px;
+}
+
+.DropdownMenu {
+  min-width: 150px;
+}
+
+.Absolute {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+
+.ThreeDotsButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #b99a45;
+}
+
+.ThreeDotsButton:hover {
+  color: #0d5589;
+}
+
+.ThreeDotsButton:focus {
+  outline: none;
+}
